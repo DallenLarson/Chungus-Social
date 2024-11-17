@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chungus Social</title>
+      
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Chungus Social" />
+        <meta property="og:description" content="Hop in and share your thoughts with Chungus Social!" />
+        <meta property="og:image" content="https://chungus.social/embed.jpg" />
+        <meta property="og:url" content="https://chungus.social" />
+        <meta property="og:type" content="website" />
+      
+        <!-- Twitter Card (optional for Twitter compatibility) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Chungus Social" />
+        <meta name="twitter:description" content="Hop in and share your thoughts with Chungus Social!" />
+        <meta name="twitter:image" content="https://chungus.social/embed.jpg" />
+      
+        <!-- Other Metadata -->
+        <link rel="stylesheet" href="login.css">
+      </head>
+      
+<body>
+  <div class="login-container">
+    <img src="logo.png" alt="Chungus Social Logo" class="logo">
+    <h1>Chungus Social</h1>
+    <p>Hop in and share your thoughts!</p>
+    
+    <div id="form-container">
+      <!-- Login Form -->
+      <form id="loginForm" class="form">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit" class="btn">Login</button>
+      </form>
+      
+      <!-- Sign-Up Form -->
+      <form id="signupForm" class="form hidden">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupUsername" placeholder="Username" required />
+        <input type="email" id="signupEmail" placeholder="Email" required />
+        <input type="password" id="signupPassword" placeholder="Password" required />
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+    </div>
+
+    <div id="googleLoginContainer">
+        <button id="googleLoginBtn" class="btn google-btn">
+          <alt="Google Logo" class="google-logo"> Login with Google
+        </button>
+      </div>
+      
+
+    <p class="toggle-form">
+      <span id="toggleToSignup">Don't have an account? Sign up.</span>
+      <span id="toggleToLogin" class="hidden">Already have an account? Log in.</span>
+    </p>
+    <div id="errorMessage"></div>
+  </div>
+  <script type="module" src="login.js"></script>
+</body>
+</html>

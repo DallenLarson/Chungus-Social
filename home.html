@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chungus Social - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Chungus Social Logo" class="logo">
+    <h1>Chungus Social</h1>
+    <nav>
+      <button id="forYouBtn" class="nav-btn active">For You</button>
+      <button id="followingBtn" class="nav-btn">Following</button>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="write-hop">
+      <textarea id="hopContent" placeholder="What's hoppin'?" maxlength="200"></textarea>
+      <div class="hop-controls">
+        <span id="charCount" class="char-count">200</span>
+        <button id="postHopBtn" class="btn">Post Hop</button>
+      </div>
+    </section>
+
+    <section id="feed" class="feed">
+      <h2 id="feedTitle">For You</h2>
+      <div id="hopsContainer"></div>
+    </section>
+  </main>
+
+  <script type="module" src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a; /* Dark gray */
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  header .logo {
+    width: 50px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    color: #ffa500; /* Orange */
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .nav-btn.active {
+    color: #ffa500; /* Orange */
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  /* Write Hop Section */
+  .write-hop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  textarea {
+    background-color: #1a1a1a; /* Dark gray */
+    color: #fff;
+    border: 1px solid #ffa500; /* Orange border */
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 1rem;
+    resize: none;
+    height: 100px;
+  }
+  
+  textarea::placeholder {
+    color: #aaa; /* Light gray placeholder */
+  }
+  
+  .hop-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .char-count {
+    font-size: 0.9rem;
+    color: #aaa; /* Light gray */
+  }
+  
+  .char-count.warning {
+    color: #ffa500; /* Orange warning */
+  }
+  
+  .btn {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #ffa500; /* Orange */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #e59400; /* Slightly darker orange */
+  }
+  
+  /* Feed Section */
+  .feed {
+    border-top: 1px solid #333;
+  }
+  
+  #hopsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .hop {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .hop-user {
+    font-weight: bold;
+    color: #ffa500;
+  }
+  
+  .hop-content {
+    margin-top: 0.5rem;
+    color: #ccc;
+  }
+  
+  .hop-timestamp {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 0.5rem;
+  }
+  
+  .hop-actions {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .carrot-btn {
+    background: none;
+    border: none;
+    color: #ffa500; /* Orange */
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .carrot-btn:hover {
+    color: #e59400; /* Darker orange */
+  }
+  
+  .carrot-count {
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    color: darkred;
+  }
+
+  /* Profile Picture */
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    background-color: #ccc; /* Fallback color */
+  }
+  
+  .profile-picture-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    background-color: #ccc;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-stats {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .google-btn:hover {
+    background-color: #357ae8; /* Darker Google Blue */
+  }
+  
+  .google-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  #changePictureBtn,
+  #followBtn,
+  #unfollowBtn {
+    margin-top: 10px;
+  }
+  

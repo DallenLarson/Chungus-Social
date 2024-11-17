@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+  
+  /* Login Container */
+  .login-container {
+    background: #1a1a1a; /* Dark gray container */
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #ffa500; /* Orange */
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+    color: #ccc; /* Lighter gray */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ffa500; /* Orange border */
+    border-radius: 4px;
+    background-color: #333; /* Dark input background */
+    color: #fff; /* White text */
+  }
+  
+  input::placeholder {
+    color: #aaa; /* Light gray placeholder */
+  }
+  
+  button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #ffa500; /* Orange */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e59400; /* Slightly darker orange */
+  }
+  
+  .toggle-form span {
+    color: #ffa500;
+    cursor: pointer;
+  }
+  
+  .toggle-form span:hover {
+    text-decoration: underline;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #errorMessage {
+    margin-top: 1rem;
+    color: red;
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chungus Social - Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Chungus Social Logo" class="logo">
+    <h1 id="profileUsername">@username</h1>
+  </header>
+
+  <main>
+    <section class="profile-info">
+        <img src="default-profile.png" alt="Profile Picture" id="profilePicture" class="profile-picture-large">
+        <button id="changePictureBtn" class="btn hidden">Change Profile Picture</button>
+        <button id="followBtn" class="btn hidden">Follow</button>
+        <button id="unfollowBtn" class="btn hidden">Unfollow</button>
+        <div class="profile-stats">
+          <div><strong id="followCount">0</strong> Following</div>
+          <div><strong id="followerCount">0</strong> Followers</div>
+          <div><strong id="hopCount">0</strong> Hops</div>
+        </div>
+      </section>
+      
+
+    <section id="hopsContainer" class="feed">
+      <!-- User's hops will be rendered here -->
+    </section>
+  </main>
+
+  <script type="module" src="user.js"></script>
+</body>
+</html>
