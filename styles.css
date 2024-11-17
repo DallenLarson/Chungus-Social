@@ -238,3 +238,29 @@ body {
     margin-top: 10px;
   }
   
+  /* Loading Page */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+}
+
+.loading-container .logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.loading-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffa500; /* Orange text */
+}
+
+.loading-container p {
+  font-size: 1.2rem;
+}
